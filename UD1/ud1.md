@@ -1,6 +1,6 @@
 # Procesos
 #### En este documento hablaremos sobre los diversos comandos que podemos usar frente a la monitorizacion de tareas y usuarios
-
+---
 # PS
 Comandos de ps y sus opciones
 
@@ -8,81 +8,77 @@ Comandos de ps y sus opciones
 ![ps](https://img.shields.io/badge/ps-au-blue)
 
 
-
-![psau](img/psau.png)
-
 ```
 ps au
 ```
 Presenta una lista de los procesos que se estan ejecutando en el momento en el que se escribe el comando. Incluyendo el usuario y el PID.
 
+![psau](img/psau.png)
 
+---
 
 ![ps](https://img.shields.io/badge/ps-aux-blue)
 
 
 
-![psaux](img/psaux.png)
 
 ```
 ps aux
 ```
 Como el anterior pero incluyendo todos los procesos ejecutandose en el sistema.
+![psaux](img/psaux.png)
 
+---
 
+![ps](https://img.shields.io/badge/ps---u-blue)
 
-![ps](https://img.shields.io/badge/ps---au-blue)
-
-
-
-![ps-u](img/ps-u.png)
 
 ```
 ps -u 'usuario'
 ```
 Muestra todos los procesos ejecutados por un usuario concreto.
+
+![ps-u](img/ps-u.png)
 
 
 # TOP
-Comandos de ps y sus opciones
+Comandos de top y sus opciones
 
 
-![ps](https://img.shields.io/badge/ps-au-blue)
-
-
-
-![psau](img/psau.png)
+![top](https://img.shields.io/badge/top-blue)
 
 ```
-ps au
+top
 ```
-Presenta una lista de los procesos que se estan ejecutando en el momento en el que se escribe el comando. Incluyendo el usuario y el PID.
+Muestra los procesos ejecutandose a tiempo real
 
 
+![top](img/top.png)
 
-![ps](https://img.shields.io/badge/ps-aux-blue)
-
-
-
-![psaux](img/psaux.png)
 
 ```
-ps aux
+top -b -n 3 > top.info
 ```
-Como el anterior pero incluyendo todos los procesos ejecutandose en el sistema.
+
+Este comando hace una captura de lo que se mostraria en el comando top (procesos en tiempo real) y los introduce en un archivo, en el caso del ejemplo, en top.info
 
 
 
-![ps](https://img.shields.io/badge/ps---au-blue)
+# HTOP
+Comandos de htop y sus opciones
 
-
-
-![ps-u](img/ps-u.png)
+![htop](https://img.shields.io/badge/htop-blue)
 
 ```
-ps -u 'usuario'
+htop
 ```
-Muestra todos los procesos ejecutados por un usuario concreto.
+Es parecido al comando top, vendria a ser equivalente al administrador de tareas en windows, permitiendo interactuar y realizar acciones con los procesos, por ejemplo, cerrarlas sin necesidad de usar un comando aparte.
+
+
+![top](img/htop.png)
+
+
+
 
 
 
