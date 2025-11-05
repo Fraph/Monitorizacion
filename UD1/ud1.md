@@ -78,6 +78,33 @@ Es parecido al comando top, vendria a ser equivalente al administrador de tareas
 ![top](img/htop.png)
 
 
+# ATOP
+Comandos de atop y sus opciones
+
+![atop](https://img.shields.io/badge/atop-blue)
+
+```
+atop
+```
+Este servicio toma instantaneas de los procesos en ejecucion cada cierto tiempo. Por defecto las hace cada 10 minutos.
+
+![atop](img/atop.png)
+
+Para acceder al comando "raw" de un dia en concreto debes acceder a /var/log/atop/ y ejecutar el comando 
+```
+cd /var/log/atop
+atop -r atop_XXXXX
+```
+
+Podemos "estresar" la cpu con atop forzandola a crear instantaneas:
+
+```
+for i in {1..2}; do yes >/dev/null & done
+atop
+```
+
+![atop](img/atopestresado.png)
+
 
 
 
