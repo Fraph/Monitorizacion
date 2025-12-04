@@ -7,8 +7,4 @@
 ### [2. Memoria, espacio y rendimiento](UD2/d2.md)
 ### [3. Trafico de la red](UD3/ud3.md)
 ### [4. Puertos](UD4/ud4.md)
-### [5. ](UD5/ud5.md)
-### [6. ](UD6/ud6.md)
-### [Conclusiones](conclusiones.md)
-### [Menciones](men.md)
 ### [Autor](autor.md)
